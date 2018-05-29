@@ -14,23 +14,22 @@ class InputXml extends Component {
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+    this.setState({text: event.target.value});
   }
 
   handleSubmit(event) {
-    alert('Text submitted: ' + this.state.value);
-
     event.preventDefault();
+
+    this.props.onSubmit(this.state.text);
   }
 
   render() {
     return (
       <form onSubmit={this.handleSubmit} className="form-input">
-        <img className="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72" />
-        <h1 className="h3 mb-3 font-weight-normal">Please enter text</h1>
-        <label for="xmlInput" className="sr-only">Text</label>
-        <textarea id="xmlInput" rows="10" className="form-control" placeholder="Paste text here ..." required autofocus
-          value={this.state.value} onChange={this.handleChange} />
+        <h1 className="h3 mt-4 mb-3 font-weight-normal">Please enter text</h1>
+        <label htmlFor="xmlInput" className="sr-only">Text</label>
+        <textarea id="xmlInput" rows="10" className="form-control" placeholder="Paste text here ..." required autoFocus
+          value={this.state.text} onChange={this.handleChange} />
 
         <button className="mt-3 btn btn-lg btn-primary btn-block" type="submit">Go!</button>
       </form>

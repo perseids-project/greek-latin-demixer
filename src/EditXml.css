@@ -1,6 +1,10 @@
-.form-input {
+.text-view {
   width: 100%;
   max-width: 860px;
   padding: 15px;
   margin: 0 auto;
+}
+
+.text-pre {
+  text-align: left;
 }
