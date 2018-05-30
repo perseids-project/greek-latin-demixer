@@ -1,9 +1,6 @@
 Greek Latin Demixer
 ===================
 
-Overview
---------
-
 This is a tool for processing texts that contain a mixture of Latin and Greek characters.
 
 Try it Out
