@@ -7,4 +7,9 @@
 
 .text-pre {
   text-align: left;
+  height: 100%
+}
+
+.vh-80 {
+  height: 80vh;
 }

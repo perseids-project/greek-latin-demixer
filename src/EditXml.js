@@ -35,13 +35,13 @@ class EditXml extends Component {
   render() {
     return (
       <div className="text-view">
-        <h1 className="h3 mt-4 mb-1 font-weight-normal">View Text</h1>
+        <h1 className="h3 mt-2 mb-1 font-weight-normal">View Text</h1>
         <h5 className="h5 mb-3 font-weight-normal">
           <span className="text-primary">Latin text is blue. </span>
           <span className="text-danger">Greek text is red. </span>
           Click on a word to edit it
         </h5>
-        <div className="row">
+        <div className="row vh-80">
           <div className="col-sm-3 pt-2 border">
             <WordPanel word={this.state.activeWord} />
           </div>
