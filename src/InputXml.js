@@ -26,9 +26,10 @@ class InputXml extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit} className="form-input">
-        <h1 className="h3 mt-4 mb-3 font-weight-normal">Please enter text</h1>
+        <h1 className="h3 mt-4 mb-1 font-weight-normal">Latin and Greek Demixer</h1>
+        <h5 className="h5 mb-3 font-weight-normal">Enter text that contains Greek and Latin characters below.</h5>
         <label htmlFor="xmlInput" className="sr-only">Text</label>
-        <textarea id="xmlInput" rows="10" className="form-control" placeholder="Paste text here ..." required autoFocus
+        <textarea id="xmlInput" rows="10" className="form-control" placeholder="Enter text here ..." required autoFocus
           value={this.state.text} onChange={this.handleChange} />
 
         <button className="mt-3 btn btn-lg btn-primary btn-block" type="submit">Go!</button>

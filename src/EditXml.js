@@ -20,7 +20,7 @@ class EditXml extends Component {
         <h1 className="h3 mt-4 mb-1 font-weight-normal">View Text</h1>
         <h5 className="h5 mb-3 font-weight-normal">
           <span className="text-primary">Latin text is blue. </span>
-          <span className="text-danger">Greek text is red.</span>
+          <span className="text-danger">Greek text is red. </span>
           Click on a word to edit it
         </h5>
         <div className="row">
