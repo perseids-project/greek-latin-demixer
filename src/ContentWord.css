@@ -1,0 +1,5 @@
+/* taken from .bg-warning class in Bootstrap */
+.yellow-on-hover:hover {
+  background-color: #ffc107!important;
+  cursor: pointer;
+}
