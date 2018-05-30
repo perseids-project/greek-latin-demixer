@@ -11,7 +11,7 @@ class ContentLine extends Component {
 
   convertLine(line) {
     return Delimit.split(line).map(function (word, ii) {
-      if (word.type == "word") {
+      if (word.type === "word") {
         return <ContentWord key={ii}>{word.string}</ContentWord>;
       }
 
