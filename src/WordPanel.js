@@ -1,22 +1,61 @@
 import React, { Component } from 'react';
 
 class WordPanel extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      customText: '',
+    };
+
+    this.handleCustomChange = this.handleCustomChange.bind(this);
+    this.handleCustomClick = this.handleCustomClick.bind(this);
+    this.handleGreekClick = this.handleGreekClick.bind(this);
+    this.handleLatinClick = this.handleLatinClick.bind(this);
+  }
+
+  componentWillReceiveProps(props) {
+    this.setState({ customText: props.word.text });
+  }
+
+  handleCustomChange(event) {
+    this.setState({ customText: event.target.value });
+  }
+
+  handleCustomClick() {
+    this.props.word.onChange(this.state.customText);
+  }
+
+  handleGreekClick() {
+    this.props.word.onChange(this.props.word.greek);
+  }
+
+  handleLatinClick() {
+    this.props.word.onChange(this.props.word.latin);
+  }
+
   render() {
     return (
       <form>
         <div className="form-group">
           <input type="text" readOnly className="form-control text-primary mb-1" value={this.props.word.latin} />
-          <button type="button" className="btn btn-block btn-primary">Latin</button>
+          <button type="button" className="btn btn-block btn-primary" onClick={this.handleLatinClick}>
+            Latin
+          </button>
         </div>
 
         <div className="form-group">
           <input type="text" readOnly className="form-control text-danger mb-1" value={this.props.word.greek} />
-          <button type="button" className="btn btn-block btn-danger">Greek</button>
+          <button type="button" className="btn btn-block btn-danger" onClick={this.handleGreekClick}>
+            Greek
+          </button>
         </div>
 
         <div className="form-group">
-          <input type="text" className="form-control mb-1" />
-          <button type="button" className="btn btn-block btn-secondary">Custom</button>
+          <input type="text" className="form-control mb-1" value={this.state.customText} onChange={this.handleCustomChange} />
+          <button type="button" className="btn btn-block btn-secondary" onClick={this.handleCustomClick}>
+            Custom
+          </button>
         </div>
       </form>
     );

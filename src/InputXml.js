@@ -14,7 +14,7 @@ class InputXml extends Component {
   }
 
   handleChange(event) {
-    this.setState({text: event.target.value});
+    this.setState({ text: event.target.value });
   }
 
   handleSubmit(event) {
