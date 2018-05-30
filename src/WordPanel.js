@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Clipboard from 'react-clipboard.js';
 
 class WordPanel extends Component {
   constructor(props) {
@@ -8,6 +9,7 @@ class WordPanel extends Component {
       customText: '',
     };
 
+    this.handleClipboardSuccess = this.handleClipboardSuccess.bind(this);
     this.handleCustomChange = this.handleCustomChange.bind(this);
     this.handleCustomClick = this.handleCustomClick.bind(this);
     this.handleGreekClick = this.handleGreekClick.bind(this);
@@ -16,6 +18,10 @@ class WordPanel extends Component {
 
   componentWillReceiveProps(props) {
     this.setState({ customText: props.word.text });
+  }
+
+  handleClipboardSuccess(event) {
+    event.clearSelection();
   }
 
   handleCustomChange(event) {
@@ -56,6 +62,16 @@ class WordPanel extends Component {
           <button type="button" className="btn btn-block btn-secondary" onClick={this.handleCustomClick}>
             Custom
           </button>
+        </div>
+
+        <div className="form-group">
+          <Clipboard button-type="button"
+            className="btn btn-block btn-success mt-4"
+            data-clipboard-target=".text-pre"
+            onSuccess={this.handleClipboardSuccess}>
+
+            Copy to Clipboard
+          </Clipboard>
         </div>
       </form>
     );
