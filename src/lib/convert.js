@@ -66,15 +66,21 @@ const greekRegExp = new RegExp(`[${charRange.greek}]`);
 const latinRegExp = new RegExp(`[${charRange.latin}]`);
 const mixtureRegExp = new RegExp(`([${charRange.greek}][${charRange.latin}])|([${charRange.latin}][${charRange.greek}])`)
 
-const ltgFactory = function (map) {
+const ltgFactory = function (map, regExp) {
   return function (string) {
-    return string.split("").map(a => map[a] || "?").join("")
+    return string.split("").map((a) => {
+      if (regExp.test(a)) {
+        return a;
+      }
+
+      return map[a] || "?";
+    }).join("")
   };
 };
 
 const Convert = {
-  ltg: ltgFactory(ltgMap),
-  gtl: ltgFactory(gtlMap),
+  ltg: ltgFactory(ltgMap, greekRegExp),
+  gtl: ltgFactory(gtlMap, latinRegExp),
   isMixture: RegExp.prototype.test.bind(mixtureRegExp),
   isGreek: RegExp.prototype.test.bind(greekRegExp),
   isLatin: RegExp.prototype.test.bind(latinRegExp),

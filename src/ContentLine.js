@@ -10,9 +10,13 @@ class ContentLine extends Component {
   }
 
   convertLine(line) {
-    return Delimit.split(line).map(function (word, ii) {
+    return Delimit.split(line).map((word, ii) => {
       if (word.type === "word") {
-        return <ContentWord key={ii}>{word.string}</ContentWord>;
+        return (
+          <ContentWord key={ii} selectActiveWord={this.props.selectActiveWord}>
+            {word.string}
+          </ContentWord>
+        );
       }
 
       return word.string;
