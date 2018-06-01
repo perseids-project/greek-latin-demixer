@@ -6,7 +6,7 @@ class InputXml extends Component {
     super(props);
 
     this.state = {
-      text: 'Τhe quick broωn fox jumps over the lαzy dog.',
+      text: 'Τhe quick broωn fox jumps over the lαzy dog.\nἡ ταχεῖα ξάvθη ἀλώπηξ ὑπὲρ τὸν ἀργὸν kύνα ὑπeρπηδαῖ.',
     }
 
     this.handleChange = this.handleChange.bind(this);

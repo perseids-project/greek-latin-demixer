@@ -68,7 +68,7 @@ class WordPanel extends Component {
   }
 
   renderGreekInput() {
-    return <input type="text" readOnly className="form-control text-primary mb-1" value={this.props.word.greek} />;
+    return <input type="text" readOnly className="form-control text-danger mb-1" value={this.props.word.greek} />;
   }
 
   renderGreekTooltip() {
