@@ -8,12 +8,6 @@ Try it Out
 
 [https://perseids-project.github.io/greek-latin-demixer/](https://perseids-project.github.io/greek-latin-demixer/)
 
-Try copying and pasting this text:
-
-```
-Τhe quick broωn fox jumps over the lαzy dog
-```
-
 Installation
 ------------
 
