@@ -12,14 +12,14 @@ in with the Latin characters.
 ### How to Use
 
 Enter text that contains a mixture of Greek and Latin characters in the text box and press `Go!`.
-This takes you a page that shows you the Latin characters in blue and the Greek characters in red.
+This takes you to a page that shows you the Latin characters in blue and the Greek characters in red.
 
 Click on one of the words. On the left-hand side of the screen there are three sections: `Latin`, `Greek`,
 and `Custom`. The `Latin` section shows what the word would look like if all characters were replaced with Latin
 characters. The `Greek` section shows what it would look like if replaced with Greek characters. For example,
 `aε` would be `ae` in the Latin section and `αε` in the Greek section.
 
-Clicking the `Latin` or `Greek` button will insert that suggestion.
+Clicking the `Latin` or `Greek` button will insert the respective suggestion.
 
 The `Custom` section allows any input. Clicking the `Custom` button will insert the text in the `Custom` input.
 
@@ -32,6 +32,6 @@ The `Custom` section allows any input. Clicking the `Custom` button will insert 
 
 `yarn start`
 
-## Building
+## Deploying a new version to github.io
 
-`yarn build`
+`yarn deploy`
