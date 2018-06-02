@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 950px;
   padding: 15px;
-  margin: 0 auto;
+  margin: 0 auto 60px auto;
 }
 
 .text-pre {
@@ -10,6 +10,6 @@
   height: 100%
 }
 
-.vh-80 {
-  height: 80vh;
+.view-height {
+  height: 600px;
 }

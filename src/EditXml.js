@@ -41,11 +41,11 @@ class EditXml extends Component {
           <span className="text-danger">Greek text is red. </span>
           Click on a word to edit it
         </h5>
-        <div className="row vh-80">
+        <div className="row view-height">
           <div className="col-sm-3 pt-2 border">
             <WordPanel word={this.state.activeWord} />
           </div>
-          <div className="col-sm-9 pr-0">
+          <div className="col-sm-9">
             <pre className="text-pre bg-light p-1">
               {this.convertText(this.props.text)}
             </pre>

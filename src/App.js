@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import EditXml from './EditXml.js';
 import InputXml from './InputXml.js';
+import Footer from './Footer.js';
 import './App.css';
 
 class App extends Component {
@@ -23,11 +24,15 @@ class App extends Component {
   render() {
     return (
       <div className="text-center">
-        {this.state.text ? (
-          <EditXml text={this.state.text} />
-        ) : (
-          <InputXml onSubmit={this.handleInputXmlSubmit} />
-        )}
+        <div className="container">
+          {this.state.text ? (
+            <EditXml text={this.state.text} />
+          ) : (
+            <InputXml onSubmit={this.handleInputXmlSubmit} />
+          )}
+        </div>
+
+        <Footer />
       </div>
     );
   }
