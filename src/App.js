@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import { PerseidsHeader, PerseidsFooter } from 'perseids-react-components';
+
+import 'perseids-react-components/build/css/index.css';
+
 import EditXml from './EditXml.js';
 import InputXml from './InputXml.js';
-import Footer from './Footer.js';
+
 import './App.css';
 
 class App extends Component {
@@ -23,17 +27,29 @@ class App extends Component {
 
   render() {
     return (
-      <div className="text-center">
-        <div className="container">
-          {this.state.text ? (
-            <EditXml text={this.state.text} />
-          ) : (
-            <InputXml onSubmit={this.handleInputXmlSubmit} />
-          )}
+      <React.Fragment>
+        <PerseidsHeader>
+          Greek Latin Demixer
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <a className="nav-link" href="" target="_blank" rel="noopener noreferrer">New Document</a>
+            </li>
+          </ul>
+        </PerseidsHeader>
+        <div className="text-center">
+          <div className="container">
+            {this.state.text ? (
+              <EditXml text={this.state.text} />
+            ) : (
+              <InputXml onSubmit={this.handleInputXmlSubmit} />
+            )}
+          </div>
         </div>
-
-        <Footer />
-      </div>
+        <PerseidsFooter
+          github="https://github.com/perseids-project/greek-latin-demixer"
+          report="https://github.com/perseids-project/greek-latin-demixer/issues"
+        />
+      </React.Fragment>
     );
   }
 }

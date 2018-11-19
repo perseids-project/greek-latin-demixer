@@ -1,11 +1,12 @@
 {
   "name": "greek-latin-demixer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "homepage": "https://perseids-project.github.io/greek-latin-demixer/",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "gh-pages": "^1.1.0",
+    "perseids-react-components": "^0.0.2",
     "react": "^16.4.0",
     "react-clipboard.js": "^2.0.0",
     "react-dom": "^16.4.0",
