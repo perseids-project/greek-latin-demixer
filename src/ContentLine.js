@@ -8,6 +8,7 @@ class ContentLine extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
     selectActiveWord: PropTypes.func.isRequired,
+    focusCustomInput: PropTypes.func.isRequired,
   }
 
   constructor(props) {
@@ -17,24 +18,29 @@ class ContentLine extends Component {
   }
 
   convertLine(line) {
-    const { selectActiveWord } = this.props;
-
     return Delimit.split(line).map((word, ii) => {
       if (word.type === 'word') {
-        return (
-          // In this case, we don't have any identifying features besides index
-          // and multiple words can have the same text.
-          // The words are also not going to be reordered, so there shouldn't be
-          // any performance penalty to using index as key.
-          // eslint-disable-next-line react/no-array-index-key
-          <ContentWord key={ii} selectActiveWord={selectActiveWord}>
-            {word.string}
-          </ContentWord>
-        );
+        return this.renderWord(word, ii);
       }
 
       return word.string;
     });
+  }
+
+  renderWord(word, ii) {
+    const { selectActiveWord, focusCustomInput } = this.props;
+
+    return (
+      // In this case, we don't have any identifying features besides index
+      // and multiple words can have the same text.
+      // The words are also not going to be reordered, so there shouldn't be
+      // any performance penalty to using index as key.
+      // eslint-disable-next-line react/no-array-index-key
+      <ContentWord key={ii} selectActiveWord={selectActiveWord} focusCustomInput={focusCustomInput}>
+
+        {word.string}
+      </ContentWord>
+    );
   }
 
   render() {

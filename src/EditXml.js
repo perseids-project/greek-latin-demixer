@@ -19,18 +19,23 @@ class EditXml extends Component {
       activeWord: new Word(),
     };
 
+    this.customInputFocusRef = React.createRef();
+
     this.convertText = this.convertText.bind(this);
     this.selectActiveWord = this.selectActiveWord.bind(this);
+    this.focusCustomInput = this.focusCustomInput.bind(this);
   }
 
   convertText(text) {
+    const { selectActiveWord, focusCustomInput } = this;
+
     return text.split('\n').map((line, ii) => (
       // In this case, we don't have any identifying features besides index
       // and multiple lines can have the same text.
       // The lines are also not going to be reordered, so there shouldn't be
       // any performance penalty to using index as key.
       // eslint-disable-next-line react/no-array-index-key
-      <ContentLine key={ii} selectActiveWord={this.selectActiveWord}>
+      <ContentLine key={ii} selectActiveWord={selectActiveWord} focusCustomInput={focusCustomInput}>
         {`${line} \n`}
       </ContentLine>
     ));
@@ -44,6 +49,10 @@ class EditXml extends Component {
     this.setState({
       activeWord: word,
     });
+  }
+
+  focusCustomInput() {
+    this.customInputFocusRef.current.focus();
   }
 
   render() {
@@ -60,7 +69,7 @@ class EditXml extends Component {
         </h5>
         <div className="row view-height">
           <div className="col-sm-3 pt-2 border">
-            <WordPanel word={activeWord} />
+            <WordPanel word={activeWord} customInputFocusRef={this.customInputFocusRef} />
           </div>
           <div className="col-sm-9">
             <pre className="text-pre bg-light p-1">

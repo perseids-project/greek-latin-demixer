@@ -19,6 +19,7 @@ class ContentWord extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
     selectActiveWord: PropTypes.func.isRequired,
+    focusCustomInput: PropTypes.func.isRequired,
   }
 
   constructor(props) {
@@ -32,10 +33,13 @@ class ContentWord extends Component {
       word: undefined,
     };
 
-    this.handleKeyPress = this.handleKeyPress.bind(this);
-    this.handleFocus = this.handleFocus.bind(this);
+    this.focusRef = React.createRef();
+
     this.onChange = this.onChange.bind(this);
     this.onUnselect = this.onUnselect.bind(this);
+    this.handleKeyUp = this.handleKeyUp.bind(this);
+    this.focus = this.focus.bind(this);
+    this.handleFocus = this.handleFocus.bind(this);
   }
 
   onChange(text) {
@@ -46,7 +50,8 @@ class ContentWord extends Component {
     this.setState({ selected: false });
   }
 
-  handleKeyPress(event) {
+  handleKeyUp(event) {
+    const { focusCustomInput } = this.props;
     const { word } = this.state;
 
     switch (event.key) {
@@ -56,14 +61,24 @@ class ContentWord extends Component {
       case 'l':
         this.onChange(word.latin);
         break;
+      case 'c':
+        focusCustomInput();
+        break;
       default:
     }
+  }
+
+  focus(text) {
+    this.setState({ text }, () => {
+      this.focusRef.current.focus();
+      this.handleFocus();
+    });
   }
 
   handleFocus() {
     const { text } = this.state;
     const { selectActiveWord } = this.props;
-    const word = new Word(text, this.onChange, this.onUnselect);
+    const word = new Word(text, this.onChange, this.onUnselect, this.focus);
 
     selectActiveWord(word);
     this.setState({ word, selected: true });
@@ -74,7 +89,15 @@ class ContentWord extends Component {
     const className = selected ? 'yellow-bg' : 'yellow-bg-on-hover';
 
     return (
-      <span className={className} onFocus={this.handleFocus} onKeyPress={this.handleKeyPress} role="button" tabIndex="0">
+      <span
+        className={className}
+        onFocus={this.handleFocus}
+        onKeyUp={this.handleKeyUp}
+        role="button"
+        tabIndex="0"
+        ref={this.focusRef}
+      >
+
         {convertWord(text)}
       </span>
     );

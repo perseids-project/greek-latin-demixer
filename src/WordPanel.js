@@ -5,12 +5,14 @@ import Clipboard from 'react-clipboard.js';
 import { Tooltip } from 'react-tippy';
 
 import Word from './Word';
+import { RefType } from './lib/types';
 
 const handleClipboardSuccess = event => event.clearSelection();
 
 class WordPanel extends Component {
   static propTypes = {
-    word: PropTypes.PropTypes.instanceOf(Word).isRequired,
+    word: PropTypes.instanceOf(Word).isRequired,
+    customInputFocusRef: RefType.isRequired,
   }
 
   constructor(props) {
@@ -22,6 +24,7 @@ class WordPanel extends Component {
 
     this.handleCustomChange = this.handleCustomChange.bind(this);
     this.handleCustomClick = this.handleCustomClick.bind(this);
+    this.handleCustomKeyUp = this.handleCustomKeyUp.bind(this);
     this.handleGreekClick = this.handleGreekClick.bind(this);
     this.handleLatinClick = this.handleLatinClick.bind(this);
     this.renderLatinInput = this.renderLatinInput.bind(this);
@@ -47,6 +50,15 @@ class WordPanel extends Component {
     const { customText } = this.state;
 
     onChange(customText);
+  }
+
+  handleCustomKeyUp(event) {
+    const { word: { focus } } = this.props;
+    const { customText } = this.state;
+
+    if (event.key === 'Enter') {
+      focus(customText);
+    }
   }
 
   handleGreekClick() {
@@ -112,9 +124,19 @@ class WordPanel extends Component {
   }
 
   renderCustomInput() {
+    const { customInputFocusRef } = this.props;
     const { customText } = this.state;
 
-    return <input type="text" className="form-control mb-1" value={customText} onChange={this.handleCustomChange} />;
+    return (
+      <input
+        type="text"
+        className="form-control mb-1"
+        value={customText}
+        onChange={this.handleCustomChange}
+        onKeyUp={this.handleCustomKeyUp}
+        ref={customInputFocusRef}
+      />
+    );
   }
 
   renderCustomTooltip() {
