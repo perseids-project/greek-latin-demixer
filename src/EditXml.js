@@ -65,7 +65,7 @@ class EditXml extends Component {
         <h5 className="h5 mb-3 font-weight-normal">
           <span className="text-primary">Latin text is blue. </span>
           <span className="text-danger">Greek text is red. </span>
-          Click on a word to edit it
+          Click on a word to edit it.
         </h5>
         <div className="row view-height">
           <div className="col-sm-3 pt-2 border">

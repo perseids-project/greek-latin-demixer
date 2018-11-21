@@ -7,6 +7,8 @@ import { Tooltip } from 'react-tippy';
 import Word from './Word';
 import { RefType } from './lib/types';
 
+import './WordPanel.css';
+
 const handleClipboardSuccess = event => event.clearSelection();
 
 class WordPanel extends Component {
@@ -192,6 +194,34 @@ class WordPanel extends Component {
 
             Copy to Clipboard
           </Clipboard>
+        </div>
+
+        <div className="form-group">
+          <p className="instructions-box">
+            <h6>Keyboard shortcuts</h6>
+            <ul className="instructions-list">
+              <li>
+                <strong>Tab</strong>
+                : move through the document
+              </li>
+              <li>
+                <strong>l</strong>
+                : click Latin button
+              </li>
+              <li>
+                <strong>g</strong>
+                : click Greek button
+              </li>
+              <li>
+                <strong>c</strong>
+                : go to to Custom input
+              </li>
+              <li>
+                <strong>Enter</strong>
+                (in custom input): click Custom button
+              </li>
+            </ul>
+          </p>
         </div>
       </form>
     );
