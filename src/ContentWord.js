@@ -26,8 +26,13 @@ class ContentWord extends Component {
 
     const { children } = this.props;
 
-    this.state = { text: children, selected: false };
+    this.state = {
+      text: children,
+      selected: false,
+      word: undefined,
+    };
 
+    this.handleKeyPress = this.handleKeyPress.bind(this);
     this.handleFocus = this.handleFocus.bind(this);
     this.onChange = this.onChange.bind(this);
     this.onUnselect = this.onUnselect.bind(this);
@@ -41,13 +46,27 @@ class ContentWord extends Component {
     this.setState({ selected: false });
   }
 
+  handleKeyPress(event) {
+    const { word } = this.state;
+
+    switch (event.key) {
+      case 'g':
+        this.onChange(word.greek);
+        break;
+      case 'l':
+        this.onChange(word.latin);
+        break;
+      default:
+    }
+  }
+
   handleFocus() {
     const { text } = this.state;
     const { selectActiveWord } = this.props;
     const word = new Word(text, this.onChange, this.onUnselect);
 
     selectActiveWord(word);
-    this.setState({ selected: true });
+    this.setState({ word, selected: true });
   }
 
   render() {
@@ -55,7 +74,7 @@ class ContentWord extends Component {
     const className = selected ? 'yellow-bg' : 'yellow-bg-on-hover';
 
     return (
-      <span className={className} onFocus={this.handleFocus} role="button" tabIndex="0">
+      <span className={className} onFocus={this.handleFocus} onKeyPress={this.handleKeyPress} role="button" tabIndex="0">
         {convertWord(text)}
       </span>
     );
