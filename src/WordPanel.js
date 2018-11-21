@@ -1,8 +1,18 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import Clipboard from 'react-clipboard.js';
 import { Tooltip } from 'react-tippy';
 
+import Word from './Word';
+
+const handleClipboardSuccess = event => event.clearSelection();
+
 class WordPanel extends Component {
+  static propTypes = {
+    word: PropTypes.PropTypes.instanceOf(Word).isRequired,
+  }
+
   constructor(props) {
     super(props);
 
@@ -10,7 +20,6 @@ class WordPanel extends Component {
       customText: '',
     };
 
-    this.handleClipboardSuccess = this.handleClipboardSuccess.bind(this);
     this.handleCustomChange = this.handleCustomChange.bind(this);
     this.handleCustomClick = this.handleCustomClick.bind(this);
     this.handleGreekClick = this.handleGreekClick.bind(this);
@@ -24,11 +33,9 @@ class WordPanel extends Component {
   }
 
   componentWillReceiveProps(props) {
-    this.setState({ customText: props.word.text });
-  }
+    const { word: { text } } = props;
 
-  handleClipboardSuccess(event) {
-    event.clearSelection();
+    this.setState({ customText: text });
   }
 
   handleCustomChange(event) {
@@ -36,28 +43,40 @@ class WordPanel extends Component {
   }
 
   handleCustomClick() {
-    this.props.word.onChange(this.state.customText);
+    const { word: { onChange } } = this.props;
+    const { customText } = this.state;
+
+    onChange(customText);
   }
 
   handleGreekClick() {
-    this.props.word.onChange(this.props.word.greek);
+    const { word: { onChange, greek } } = this.props;
+
+    onChange(greek);
   }
 
   handleLatinClick() {
-    this.props.word.onChange(this.props.word.latin);
+    const { word: { onChange, latin } } = this.props;
+
+    onChange(latin);
   }
 
   renderLatinInput() {
-    return <input type="text" readOnly className="form-control text-primary mb-1" value={this.props.word.latin} />;
+    const { word: { latin } } = this.props;
+
+    return <input type="text" readOnly className="form-control text-primary mb-1" value={latin} />;
   }
 
   renderLatinTooltip() {
-    if (this.props.word.latin !== '') {
+    const { word: { latin } } = this.props;
+
+    if (latin !== '') {
       return (
         <Tooltip
           arrow="true"
           position="top"
-          title="This box contains the selected word with all Greek characters replaced with Latin characters. For example, α becomes a. Click the 'Latin' button below to insert the suggestion.">
+          title="This box contains the selected word with all Greek characters replaced with Latin characters. For example, α becomes a. Click the 'Latin' button below to insert the suggestion."
+        >
 
           {this.renderLatinInput()}
         </Tooltip>
@@ -68,16 +87,21 @@ class WordPanel extends Component {
   }
 
   renderGreekInput() {
-    return <input type="text" readOnly className="form-control text-danger mb-1" value={this.props.word.greek} />;
+    const { word: { greek } } = this.props;
+
+    return <input type="text" readOnly className="form-control text-danger mb-1" value={greek} />;
   }
 
   renderGreekTooltip() {
-    if (this.props.word.greek !== '') {
+    const { word: { greek } } = this.props;
+
+    if (greek !== '') {
       return (
         <Tooltip
           arrow="true"
           position="top"
-          title="This box contains the selected word with all Latin characters replaced with Greek characters. For example, a becomes α. Click the 'Greek' button below to insert the suggestion.">
+          title="This box contains the selected word with all Latin characters replaced with Greek characters. For example, a becomes α. Click the 'Greek' button below to insert the suggestion."
+        >
 
           {this.renderGreekInput()}
         </Tooltip>
@@ -88,16 +112,21 @@ class WordPanel extends Component {
   }
 
   renderCustomInput() {
-    return  <input type="text" className="form-control mb-1" value={this.state.customText} onChange={this.handleCustomChange} />;
+    const { customText } = this.state;
+
+    return <input type="text" className="form-control mb-1" value={customText} onChange={this.handleCustomChange} />;
   }
 
   renderCustomTooltip() {
-    if (this.state.customText !== '') {
+    const { customText } = this.state;
+
+    if (customText !== '') {
       return (
         <Tooltip
           arrow="true"
           position="top"
-          title="This box allows you to edit the selected word. Click the 'Custom' button to insert the edited word.">
+          title="This box allows you to edit the selected word. Click the 'Custom' button to insert the edited word."
+        >
 
           {this.renderCustomInput()}
         </Tooltip>
@@ -132,10 +161,12 @@ class WordPanel extends Component {
         </div>
 
         <div className="form-group">
-          <Clipboard button-type="button"
+          <Clipboard
+            button-type="button"
             className="btn btn-block btn-success mt-4"
             data-clipboard-target=".text-pre"
-            onSuccess={this.handleClipboardSuccess}>
+            onSuccess={handleClipboardSuccess}
+          >
 
             Copy to Clipboard
           </Clipboard>

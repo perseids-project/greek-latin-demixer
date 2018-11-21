@@ -1,56 +1,62 @@
 import React, { Component } from 'react';
-import Convert from './lib/convert.js';
-import Word from './Word.js';
+import PropTypes from 'prop-types';
+
+import Convert from './lib/convert';
+import Word from './Word';
+
 import './ContentWord.css';
 
+const convertChar = (char, key) => {
+  if (Convert.isGreek(char)) return <span key={key} className="text-danger">{char}</span>;
+  if (Convert.isLatin(char)) return <span key={key} className="text-primary">{char}</span>;
+
+  return char;
+};
+
+const convertWord = word => word.split('').map((a, i) => convertChar(a, i));
+
 class ContentWord extends Component {
+  static propTypes = {
+    children: PropTypes.node.isRequired,
+    selectActiveWord: PropTypes.func.isRequired,
+  }
+
   constructor(props) {
     super(props);
 
-    this.state = {
-      text: this.props.children,
-      selected: false,
-    };
+    const { children } = this.props;
 
-    this.convertChar = this.convertChar.bind(this);
-    this.convertWord = this.convertWord.bind(this);
-    this.handleClick = this.handleClick.bind(this);
+    this.state = { text: children, selected: false };
+
+    this.handleFocus = this.handleFocus.bind(this);
     this.onChange = this.onChange.bind(this);
     this.onUnselect = this.onUnselect.bind(this);
   }
 
-  convertChar(char, key) {
-    if (Convert.isGreek(char)) return <span key={key} className="text-danger">{char}</span>;
-    if (Convert.isLatin(char)) return <span key={key} className="text-primary">{char}</span>;
-
-    return char;
-  }
-
-  convertWord(word) {
-    return word.split("").map((a, i) => this.convertChar(a, i));
-  }
-
-  handleClick() {
-    let word = new Word(this.state.text, this.onChange, this.onUnselect);
-
-    this.props.selectActiveWord(word);
-    this.setState({ selected: true });
-  }
-
   onChange(text) {
-    this.setState({ text: text });
+    this.setState({ text });
   }
 
   onUnselect() {
     this.setState({ selected: false });
   }
 
+  handleFocus() {
+    const { text } = this.state;
+    const { selectActiveWord } = this.props;
+    const word = new Word(text, this.onChange, this.onUnselect);
+
+    selectActiveWord(word);
+    this.setState({ selected: true });
+  }
+
   render() {
-    let className = this.state.selected ? "yellow-bg" : "yellow-bg-on-hover";
+    const { selected, text } = this.state;
+    const className = selected ? 'yellow-bg' : 'yellow-bg-on-hover';
 
     return (
-      <span className={className} onClick={this.handleClick}>
-        {this.convertWord(this.state.text)}
+      <span className={className} onFocus={this.handleFocus} role="button" tabIndex="0">
+        {convertWord(text)}
       </span>
     );
   }

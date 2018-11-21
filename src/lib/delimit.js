@@ -1,19 +1,14 @@
-// eslint-disable-next-line
+// the linter incorrectly thinks some of these escapes are useless
+// with all of the "useless" escapes removed, the regex no longer works
+// eslint-disable-next-line no-useless-escape
 const splitRegExp = /([\s\/\\\(\)"'\:\,\.;<>~\!@#\$%\^&\*\|\+\=\[\]\{\}`\?\-…]+)/;
 
-function split(line) {
-  return line.split(splitRegExp).map(function(string) {
-    let type = 'word';
-    if (splitRegExp.test(string)) {
-      type = 'delimiter';
-    }
+const split = line => (
+  line.split(splitRegExp).map(string => (
+    splitRegExp.test(string) ? { type: 'delimiter', string } : { type: 'word', string }
+  )).filter(({ string }) => string !== '')
+);
 
-    return { type: type, string: string };
-  });
-}
-
-const Delimit = {
-  split: split,
-};
+const Delimit = { split };
 
 export default Delimit;
