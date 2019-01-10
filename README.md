@@ -34,4 +34,8 @@ The `Custom` section allows any input. Clicking the `Custom` button will insert 
 
 ## Deploying a new version to github.io
 
-`yarn deploy`
+`yarn deploy-github`
+
+## Deploying a new version to Perseids
+
+`yarn deploy-perseids`
