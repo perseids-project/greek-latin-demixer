@@ -15,6 +15,7 @@
     "react-tippy": "^1.2.2"
   },
   "scripts": {
+    "deploy": "yarn deploy-github && yarn deploy-perseids",
     "predeploy-github": "yarn run build",
     "deploy-github": "yarn run cleanup && gh-pages -d build",
     "predeploy-perseids": "PUBLIC_URL='/demixer' yarn run build",
