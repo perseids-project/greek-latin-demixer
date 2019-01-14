@@ -1,6 +1,15 @@
 {
-  "main.css": "static/css/main.6b5daadf.css",
-  "main.css.map": "static/css/main.6b5daadf.css.map",
-  "main.js": "static/js/main.0166b47a.js",
-  "main.js.map": "static/js/main.0166b47a.js.map"
+  "main.css": "/demixer/static/css/main.570dfd11.chunk.css",
+  "main.js": "/demixer/static/js/main.fd38038b.chunk.js",
+  "main.js.map": "/demixer/static/js/main.fd38038b.chunk.js.map",
+  "static/css/1.6f7ef0a8.chunk.css": "/demixer/static/css/1.6f7ef0a8.chunk.css",
+  "static/js/1.3812726b.chunk.js": "/demixer/static/js/1.3812726b.chunk.js",
+  "static/js/1.3812726b.chunk.js.map": "/demixer/static/js/1.3812726b.chunk.js.map",
+  "runtime~main.js": "/demixer/static/js/runtime~main.3b937b4a.js",
+  "runtime~main.js.map": "/demixer/static/js/runtime~main.3b937b4a.js.map",
+  "static/css/1.6f7ef0a8.chunk.css.map": "/demixer/static/css/1.6f7ef0a8.chunk.css.map",
+  "static/css/main.570dfd11.chunk.css.map": "/demixer/static/css/main.570dfd11.chunk.css.map",
+  "index.html": "/demixer/index.html",
+  "precache-manifest.1230442e0d9fb1f92157f2efabb74736.js": "/demixer/precache-manifest.1230442e0d9fb1f92157f2efabb74736.js",
+  "service-worker.js": "/demixer/service-worker.js"
 }
