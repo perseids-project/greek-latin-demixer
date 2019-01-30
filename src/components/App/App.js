@@ -3,8 +3,8 @@ import { PerseidsHeader, PerseidsFooter } from 'perseids-react-components';
 
 import 'perseids-react-components/build/css/index.css';
 
-import EditXml from './EditXml';
-import InputXml from './InputXml';
+import EditXml from '../EditXml';
+import InputXml from '../InputXml';
 
 import './App.css';
 

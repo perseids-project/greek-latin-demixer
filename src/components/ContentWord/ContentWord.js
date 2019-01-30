@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Convert from './lib/convert';
-import Word from './Word';
+import Convert from '../../lib/convert';
+import Word from '../Word';
 
 import './ContentWord.css';
 

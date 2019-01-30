@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import ContentWord from './ContentWord';
-import Delimit from './lib/delimit';
+import ContentWord from '../ContentWord';
+import Delimit from '../../lib/delimit';
 
 class ContentLine extends Component {
   static propTypes = {
