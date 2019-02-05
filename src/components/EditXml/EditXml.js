@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import ContentLine from './ContentLine';
-import WordPanel from './WordPanel';
-import Word from './Word';
+import ContentLine from '../ContentLine';
+import WordPanel from '../WordPanel';
+import Word from '../Word';
 
 import './EditXml.css';
 
