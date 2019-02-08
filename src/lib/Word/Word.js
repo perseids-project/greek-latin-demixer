@@ -1,4 +1,4 @@
-import Convert from './convert';
+import Convert from '../convert';
 
 class Word {
   constructor(text, onChange, onUnselect, focus) {

@@ -1,15 +1,15 @@
-.text-view {
+.textView {
   width: 100%;
   max-width: 950px;
   padding: 15px;
   margin: 0 auto 60px auto;
 }
 
-.text-pre {
+.textPre {
   text-align: left;
   height: 100%
 }
 
-.view-height {
+.viewHeight {
   height: 600px;
 }

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Convert from '../../lib/convert';
 import Word from '../../lib/Word';
 
-import './ContentWord.css';
+import styles from './ContentWord.module.css';
 
 const convertChar = (char, key) => {
   if (Convert.isGreek(char)) return <span key={key} className="text-danger">{char}</span>;
@@ -86,7 +86,7 @@ class ContentWord extends Component {
 
   render() {
     const { selected, text } = this.state;
-    const className = selected ? 'yellow-bg' : 'yellow-bg-on-hover';
+    const className = selected ? styles.yellowBg : styles.yellowBgOnHover;
 
     return (
       <span

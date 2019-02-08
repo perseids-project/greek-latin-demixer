@@ -5,7 +5,7 @@ import ContentLine from '../ContentLine';
 import WordPanel from '../WordPanel';
 import Word from '../../lib/Word';
 
-import './EditXml.css';
+import styles from './EditXml.module.css';
 
 class EditXml extends Component {
   static propTypes = {
@@ -60,19 +60,19 @@ class EditXml extends Component {
     const { text } = this.props;
 
     return (
-      <div className="text-view">
+      <div className={styles.textView}>
         <h1 className="h3 mt-2 mb-1 font-weight-normal">View Text</h1>
         <h5 className="h5 mb-3 font-weight-normal">
           <span className="text-primary">Latin text is blue. </span>
           <span className="text-danger">Greek text is red. </span>
           Click on a word to edit it.
         </h5>
-        <div className="row view-height">
+        <div className={`row ${styles.viewHeight}`}>
           <div className="col-sm-3 pt-2 border">
             <WordPanel word={activeWord} customInputFocusRef={this.customInputFocusRef} />
           </div>
           <div className="col-sm-9">
-            <pre className="text-pre bg-light p-1">
+            <pre className={`${styles.textPre} clipboard-target bg-light p-1`}>
               {this.convertText(text)}
             </pre>
           </div>

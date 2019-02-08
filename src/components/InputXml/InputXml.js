@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import './InputXml.css';
+import styles from './InputXml.module.css';
 
 class InputXml extends Component {
   static propTypes = {
@@ -36,7 +36,7 @@ class InputXml extends Component {
     const { text } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit} className="form-input">
+      <form onSubmit={this.handleSubmit} className={styles.formInput}>
         <h1 className="h3 mt-2 mb-1 font-weight-normal">Greek and Latin Demixer</h1>
         <h5 className="h5 mb-3 font-weight-normal">Enter text that contains Greek and Latin characters below.</h5>
         {/* We are stuck with an old version of jsx-a11y because of react scripts */}
