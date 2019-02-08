@@ -7,7 +7,7 @@ import { Tooltip } from 'react-tippy';
 import Word from '../Word';
 import { RefType } from '../../lib/types';
 
-import './WordPanel.css';
+import './WordPanel.module.css';
 
 const handleClipboardSuccess = event => event.clearSelection();
 

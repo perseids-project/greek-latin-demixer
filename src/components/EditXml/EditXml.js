@@ -5,7 +5,7 @@ import ContentLine from '../ContentLine';
 import WordPanel from '../WordPanel';
 import Word from '../Word';
 
-import './EditXml.css';
+import './EditXml.module.css';
 
 class EditXml extends Component {
   static propTypes = {

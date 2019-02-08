@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import './InputXml.css';
+import './InputXml.module.css';
 
 class InputXml extends Component {
   static propTypes = {

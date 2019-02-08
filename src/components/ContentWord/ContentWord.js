@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Convert from '../../lib/convert';
 import Word from '../Word';
 
-import './ContentWord.css';
+import './ContentWord.module.css';
 
 const convertChar = (char, key) => {
   if (Convert.isGreek(char)) return <span key={key} className="text-danger">{char}</span>;
