@@ -142,22 +142,16 @@ class WordPanel extends Component {
   }
 
   renderCustomTooltip() {
-    const { customText } = this.state;
+    return (
+      <Tooltip
+        arrow="true"
+        position="top"
+        title="This box allows you to edit the selected word. Click the 'Custom' button to insert the edited word."
+      >
 
-    if (customText !== '') {
-      return (
-        <Tooltip
-          arrow="true"
-          position="top"
-          title="This box allows you to edit the selected word. Click the 'Custom' button to insert the edited word."
-        >
-
-          {this.renderCustomInput()}
-        </Tooltip>
-      );
-    }
-
-    return this.renderCustomInput();
+        {this.renderCustomInput()}
+      </Tooltip>
+    );
   }
 
   render() {
@@ -197,7 +191,7 @@ class WordPanel extends Component {
         </div>
 
         <div className="form-group">
-          <p className="instructions-box">
+          <div className="instructions-box">
             <h6>Keyboard shortcuts</h6>
             <ul className="instructions-list">
               <li>
@@ -221,7 +215,7 @@ class WordPanel extends Component {
                 (in custom input): click Custom button
               </li>
             </ul>
-          </p>
+          </div>
         </div>
       </form>
     );
