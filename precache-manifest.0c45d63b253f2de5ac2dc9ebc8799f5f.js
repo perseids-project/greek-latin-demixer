@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/demixer/static/js/runtime~main.3b937b4a.js"
   },
   {
-    "revision": "6fa208435ec2e2754826b4a5557c86bd",
+    "revision": "2985f336186e30e53b76a1b070f6ab98",
     "url": "/demixer/index.html"
   }
 ];
