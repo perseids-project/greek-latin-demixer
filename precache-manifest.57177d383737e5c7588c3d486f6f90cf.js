@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/greek-latin-demixer/static/js/runtime~main.81460212.js"
   },
   {
-    "revision": "b3c7d459f1b50b29c676548f56d70e69",
+    "revision": "238a734de836b49000db5289ff526ad1",
     "url": "/greek-latin-demixer/index.html"
   }
 ];

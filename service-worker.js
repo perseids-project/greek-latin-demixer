@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/greek-latin-demixer/precache-manifest.f3cb43b232a992c9f7e92f4d09e62f16.js"
+  "/greek-latin-demixer/precache-manifest.57177d383737e5c7588c3d486f6f90cf.js"
 );
 
 workbox.clientsClaim();
