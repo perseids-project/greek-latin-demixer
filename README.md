@@ -7,7 +7,7 @@ in with the Latin characters.
 
 ## Try it Out
 
-[https://perseids-project.github.io/greek-latin-demixer/](https://perseids-project.github.io/greek-latin-demixer/)
+[https://apps.perseids.org/demixer/](https://apps.perseids.org/demixer/)
 
 ### How to Use
 
