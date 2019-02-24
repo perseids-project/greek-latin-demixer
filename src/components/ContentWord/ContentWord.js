@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Convert from '../../lib/convert';
-import Word from '../Word';
+import Word from '../../lib/Word';
 
 import './ContentWord.css';
 

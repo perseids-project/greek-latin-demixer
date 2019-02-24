@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import ContentLine from '../ContentLine';
 import WordPanel from '../WordPanel';
-import Word from '../Word';
+import Word from '../../lib/Word';
 
 import './EditXml.css';
 
