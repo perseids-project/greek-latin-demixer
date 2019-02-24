@@ -4,13 +4,12 @@ import { render } from 'react-dom';
 import ContentWord from './ContentWord';
 
 it('renders without crashing', () => {
-  const children = 'hello';
-  const selectActiveWord = function () { };
-  const focusCustomInput = function () { };
+  const selectActiveWord = () => { };
+  const focusCustomInput = () => { };
   const div = window.document.createElement('div');
-  render(<ContentWord
-    children={children}
-    selectActiveWord={selectActiveWord}
-    focusCustomInput={focusCustomInput}
-  />, div);
+  render(
+    <ContentWord selectActiveWord={selectActiveWord} focusCustomInput={focusCustomInput}>
+      children
+    </ContentWord>, div,
+  );
 });

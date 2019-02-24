@@ -6,7 +6,5 @@ import EditXml from './EditXml';
 it('renders without crashing', () => {
   const text = 'hello';
   const div = window.document.createElement('div');
-  render(<EditXml
-    text={text}
-  />, div);
+  render(<EditXml text={text} />, div);
 });

@@ -8,8 +8,7 @@ it('renders without crashing', () => {
   const word = new Word();
   const customInputFocusRef = 'hello';
   const div = window.document.createElement('div');
-  render(<WordPanel
-    word={word}
-    customInputFocusRef={customInputFocusRef}
-  />, div);
+  render(
+    <WordPanel word={word} customInputFocusRef={customInputFocusRef} />, div,
+  );
 });

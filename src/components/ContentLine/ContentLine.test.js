@@ -4,13 +4,15 @@ import { render } from 'react-dom';
 import ContentLine from './ContentLine';
 
 it('renders without crashing', () => {
-  const children = 'hello';
-  const selectActiveWord = function () { };
-  const focusCustomInput = function () { };
+  const selectActiveWord = () => { };
+  const focusCustomInput = () => { };
   const div = window.document.createElement('div');
-  render(<ContentLine
-    children={children}
-    selectActiveWord={selectActiveWord}
-    focusCustomInput={focusCustomInput}
-  />, div);
+  render(
+    <ContentLine
+      selectActiveWord={selectActiveWord}
+      focusCustomInput={focusCustomInput}
+    >
+      children
+    </ContentLine>, div,
+  );
 });
