@@ -8,7 +8,10 @@ it('renders without crashing', () => {
   const focusCustomInput = () => { };
   const div = window.document.createElement('div');
   render(
-    <ContentWord selectActiveWord={selectActiveWord} focusCustomInput={focusCustomInput}>
+    <ContentWord
+      selectActiveWord={selectActiveWord}
+      focusCustomInput={focusCustomInput}
+    >
       children
     </ContentWord>, div,
   );

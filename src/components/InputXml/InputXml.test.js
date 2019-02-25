@@ -7,6 +7,8 @@ it('renders without crashing', () => {
   const onSubmit = () => { };
   const div = window.document.createElement('div');
   render(
-    <InputXml onSubmit={onSubmit} />, div,
+    <InputXml
+      onSubmit={onSubmit}
+    />, div,
   );
 });
