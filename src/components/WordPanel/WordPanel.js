@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Clipboard from 'react-clipboard.js';
 import { Tooltip } from 'react-tippy';
 
-import Word from '../Word';
+import Word from '../../lib/Word';
 import { RefType } from '../../lib/types';
 
 import './WordPanel.css';
