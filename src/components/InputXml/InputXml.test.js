@@ -9,6 +9,7 @@ it('renders without crashing', () => {
   render(
     <InputXml
       onSubmit={onSubmit}
-    />, div,
+    />,
+    div,
   );
 });

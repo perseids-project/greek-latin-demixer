@@ -13,6 +13,7 @@ it('renders without crashing', () => {
       focusCustomInput={focusCustomInput}
     >
       children
-    </ContentLine>, div,
+    </ContentLine>,
+    div,
   );
 });

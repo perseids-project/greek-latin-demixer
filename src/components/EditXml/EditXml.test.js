@@ -9,6 +9,7 @@ it('renders without crashing', () => {
   render(
     <EditXml
       text={text}
-    />, div,
+    />,
+    div,
   );
 });

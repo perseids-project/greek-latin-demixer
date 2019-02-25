@@ -12,6 +12,7 @@ it('renders without crashing', () => {
     <WordPanel
       word={word}
       customInputFocusRef={customInputFocusRef}
-    />, div,
+    />,
+    div,
   );
 });
