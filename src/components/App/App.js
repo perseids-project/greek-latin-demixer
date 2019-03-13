@@ -6,8 +6,6 @@ import 'perseids-react-components/build/css/index.css';
 import EditXml from '../EditXml';
 import InputXml from '../InputXml';
 
-import './App.css';
-
 class App extends Component {
   constructor(props) {
     super(props);

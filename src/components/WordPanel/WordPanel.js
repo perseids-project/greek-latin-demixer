@@ -7,7 +7,7 @@ import { Tooltip } from 'react-tippy';
 import Word from '../../lib/Word';
 import { RefType } from '../../lib/types';
 
-import './WordPanel.css';
+import styles from './WordPanel.module.css';
 
 const handleClipboardSuccess = event => event.clearSelection();
 
@@ -182,7 +182,7 @@ class WordPanel extends Component {
           <Clipboard
             button-type="button"
             className="btn btn-block btn-success mt-4"
-            data-clipboard-target=".text-pre"
+            data-clipboard-target=".clipboard-target"
             onSuccess={handleClipboardSuccess}
           >
 
@@ -191,9 +191,9 @@ class WordPanel extends Component {
         </div>
 
         <div className="form-group">
-          <div className="instructions-box">
+          <div className={styles.instructionsBox}>
             <h6>Keyboard shortcuts</h6>
-            <ul className="instructions-list">
+            <ul className={styles.instructionsList}>
               <li>
                 <strong>Tab</strong>
                 : move through the document

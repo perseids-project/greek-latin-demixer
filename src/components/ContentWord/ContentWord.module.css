@@ -1,9 +1,9 @@
 /* taken from .bg-warning class in Bootstrap */
-.yellow-bg {
+.yellowBg {
   background-color: #ffc107!important;
   cursor: pointer;
 }
-.yellow-bg-on-hover:hover {
+.yellowBgOnHover:hover {
   background-color: #ffc107!important;
   cursor: pointer;
 }
