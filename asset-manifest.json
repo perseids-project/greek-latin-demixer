@@ -1,15 +1,17 @@
 {
-  "main.css": "/greek-latin-demixer/static/css/main.ac3556ca.chunk.css",
-  "main.js": "/greek-latin-demixer/static/js/main.1f632c73.chunk.js",
-  "main.js.map": "/greek-latin-demixer/static/js/main.1f632c73.chunk.js.map",
-  "static/css/1.6f7ef0a8.chunk.css": "/greek-latin-demixer/static/css/1.6f7ef0a8.chunk.css",
-  "static/js/1.36a07e6a.chunk.js": "/greek-latin-demixer/static/js/1.36a07e6a.chunk.js",
-  "static/js/1.36a07e6a.chunk.js.map": "/greek-latin-demixer/static/js/1.36a07e6a.chunk.js.map",
-  "runtime~main.js": "/greek-latin-demixer/static/js/runtime~main.81460212.js",
-  "runtime~main.js.map": "/greek-latin-demixer/static/js/runtime~main.81460212.js.map",
-  "static/css/main.ac3556ca.chunk.css.map": "/greek-latin-demixer/static/css/main.ac3556ca.chunk.css.map",
-  "static/css/1.6f7ef0a8.chunk.css.map": "/greek-latin-demixer/static/css/1.6f7ef0a8.chunk.css.map",
-  "index.html": "/greek-latin-demixer/index.html",
-  "precache-manifest.57177d383737e5c7588c3d486f6f90cf.js": "/greek-latin-demixer/precache-manifest.57177d383737e5c7588c3d486f6f90cf.js",
-  "service-worker.js": "/greek-latin-demixer/service-worker.js"
+  "files": {
+    "main.css": "/greek-latin-demixer/static/css/main.44ddaeab.chunk.css",
+    "main.js": "/greek-latin-demixer/static/js/main.373f4eb5.chunk.js",
+    "main.js.map": "/greek-latin-demixer/static/js/main.373f4eb5.chunk.js.map",
+    "runtime~main.js": "/greek-latin-demixer/static/js/runtime~main.8791682d.js",
+    "runtime~main.js.map": "/greek-latin-demixer/static/js/runtime~main.8791682d.js.map",
+    "static/css/2.61f585c8.chunk.css": "/greek-latin-demixer/static/css/2.61f585c8.chunk.css",
+    "static/js/2.c1c8e43c.chunk.js": "/greek-latin-demixer/static/js/2.c1c8e43c.chunk.js",
+    "static/js/2.c1c8e43c.chunk.js.map": "/greek-latin-demixer/static/js/2.c1c8e43c.chunk.js.map",
+    "index.html": "/greek-latin-demixer/index.html",
+    "precache-manifest.c7da44304d97d8036ae886a2156d3ecc.js": "/greek-latin-demixer/precache-manifest.c7da44304d97d8036ae886a2156d3ecc.js",
+    "service-worker.js": "/greek-latin-demixer/service-worker.js",
+    "static/css/2.61f585c8.chunk.css.map": "/greek-latin-demixer/static/css/2.61f585c8.chunk.css.map",
+    "static/css/main.44ddaeab.chunk.css.map": "/greek-latin-demixer/static/css/main.44ddaeab.chunk.css.map"
+  }
 }
