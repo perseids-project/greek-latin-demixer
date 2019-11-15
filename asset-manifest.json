@@ -1,17 +1,24 @@
 {
   "files": {
     "main.css": "/demixer/static/css/main.44ddaeab.chunk.css",
-    "main.js": "/demixer/static/js/main.501f8026.chunk.js",
-    "main.js.map": "/demixer/static/js/main.501f8026.chunk.js.map",
-    "runtime~main.js": "/demixer/static/js/runtime~main.1c569a0e.js",
-    "runtime~main.js.map": "/demixer/static/js/runtime~main.1c569a0e.js.map",
-    "static/css/2.61f585c8.chunk.css": "/demixer/static/css/2.61f585c8.chunk.css",
-    "static/js/2.c1c8e43c.chunk.js": "/demixer/static/js/2.c1c8e43c.chunk.js",
-    "static/js/2.c1c8e43c.chunk.js.map": "/demixer/static/js/2.c1c8e43c.chunk.js.map",
+    "main.js": "/demixer/static/js/main.45c14d3a.chunk.js",
+    "main.js.map": "/demixer/static/js/main.45c14d3a.chunk.js.map",
+    "runtime-main.js": "/demixer/static/js/runtime-main.dc197377.js",
+    "runtime-main.js.map": "/demixer/static/js/runtime-main.dc197377.js.map",
+    "static/css/2.9fccb9bc.chunk.css": "/demixer/static/css/2.9fccb9bc.chunk.css",
+    "static/js/2.1c794a3c.chunk.js": "/demixer/static/js/2.1c794a3c.chunk.js",
+    "static/js/2.1c794a3c.chunk.js.map": "/demixer/static/js/2.1c794a3c.chunk.js.map",
     "index.html": "/demixer/index.html",
-    "precache-manifest.4e926fc279232d14fb691126c4f39569.js": "/demixer/precache-manifest.4e926fc279232d14fb691126c4f39569.js",
+    "precache-manifest.06bbc248c0caf7b76835e28c519732ca.js": "/demixer/precache-manifest.06bbc248c0caf7b76835e28c519732ca.js",
     "service-worker.js": "/demixer/service-worker.js",
-    "static/css/2.61f585c8.chunk.css.map": "/demixer/static/css/2.61f585c8.chunk.css.map",
+    "static/css/2.9fccb9bc.chunk.css.map": "/demixer/static/css/2.9fccb9bc.chunk.css.map",
     "static/css/main.44ddaeab.chunk.css.map": "/demixer/static/css/main.44ddaeab.chunk.css.map"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dc197377.js",
+    "static/css/2.9fccb9bc.chunk.css",
+    "static/js/2.1c794a3c.chunk.js",
+    "static/css/main.44ddaeab.chunk.css",
+    "static/js/main.45c14d3a.chunk.js"
+  ]
 }
