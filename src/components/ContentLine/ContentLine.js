@@ -5,12 +5,6 @@ import ContentWord from '../ContentWord';
 import Delimit from '../../lib/delimit';
 
 class ContentLine extends Component {
-  static propTypes = {
-    children: PropTypes.node.isRequired,
-    selectActiveWord: PropTypes.func.isRequired,
-    focusCustomInput: PropTypes.func.isRequired,
-  }
-
   constructor(props) {
     super(props);
 
@@ -49,5 +43,11 @@ class ContentLine extends Component {
     return this.convertLine(children);
   }
 }
+
+ContentLine.propTypes = {
+  children: PropTypes.node.isRequired,
+  selectActiveWord: PropTypes.func.isRequired,
+  focusCustomInput: PropTypes.func.isRequired,
+};
 
 export default ContentLine;

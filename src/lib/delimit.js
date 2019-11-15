@@ -3,8 +3,8 @@
 // eslint-disable-next-line no-useless-escape
 const splitRegExp = /([\s\/\\\(\)"'\:\,\.;<>~\!@#\$%\^&\*\|\+\=\[\]\{\}`\?\-…]+)/;
 
-const split = line => (
-  line.split(splitRegExp).map(string => (
+const split = (line) => (
+  line.split(splitRegExp).map((string) => (
     splitRegExp.test(string) ? { type: 'delimiter', string } : { type: 'word', string }
   )).filter(({ string }) => string !== '')
 );

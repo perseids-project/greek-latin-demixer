@@ -25,7 +25,7 @@ class App extends Component {
     const { text } = this.state;
 
     return (
-      <React.Fragment>
+      <>
         <PerseidsHeader>
           Greek Latin Demixer
           <ul className="navbar-nav ml-auto">
@@ -47,7 +47,7 @@ class App extends Component {
           github="https://github.com/perseids-project/greek-latin-demixer"
           report="https://github.com/perseids-project/greek-latin-demixer/issues"
         />
-      </React.Fragment>
+      </>
     );
   }
 }

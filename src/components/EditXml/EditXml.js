@@ -8,10 +8,6 @@ import Word from '../../lib/Word';
 import styles from './EditXml.module.css';
 
 class EditXml extends Component {
-  static propTypes = {
-    text: PropTypes.string.isRequired,
-  }
-
   constructor(props) {
     super(props);
 
@@ -81,5 +77,10 @@ class EditXml extends Component {
     );
   }
 }
+
+EditXml.propTypes = {
+  text: PropTypes.string.isRequired,
+};
+
 
 export default EditXml;

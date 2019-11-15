@@ -4,10 +4,6 @@ import PropTypes from 'prop-types';
 import styles from './InputXml.module.css';
 
 class InputXml extends Component {
-  static propTypes = {
-    onSubmit: PropTypes.func.isRequired,
-  }
-
   constructor(props) {
     super(props);
 
@@ -61,5 +57,9 @@ class InputXml extends Component {
     );
   }
 }
+
+InputXml.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};
 
 export default InputXml;

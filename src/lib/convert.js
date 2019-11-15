@@ -68,7 +68,7 @@ const latinRegExp = new RegExp(`[${charRange.latin}]`);
 const mixtureRegExp = new RegExp(`([${charRange.greek}][${charRange.latin}])|([${charRange.latin}][${charRange.greek}])`);
 
 const ltgFactory = (dict, regExp) => (
-  string => string.split('').map(a => (regExp.test(a) ? a : (dict[a] || '?'))).join('')
+  (string) => string.split('').map((a) => (regExp.test(a) ? a : (dict[a] || '?'))).join('')
 );
 
 const Convert = {

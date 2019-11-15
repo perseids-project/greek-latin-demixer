@@ -9,19 +9,26 @@ import { RefType } from '../../lib/types';
 
 import styles from './WordPanel.module.css';
 
-const handleClipboardSuccess = event => event.clearSelection();
+const handleClipboardSuccess = (event) => event.clearSelection();
 
 class WordPanel extends Component {
-  static propTypes = {
-    word: PropTypes.instanceOf(Word).isRequired,
-    customInputFocusRef: RefType.isRequired,
+  static getDerivedStateFromProps(props, state) {
+    const { word: { text } } = props;
+    const { previousText } = state;
+
+    if (text !== previousText) {
+      return { customText: text, previousText: text };
+    }
+
+    return null;
   }
 
   constructor(props) {
     super(props);
 
     this.state = {
-      customText: '',
+      customText: null,
+      previousText: null,
     };
 
     this.handleCustomChange = this.handleCustomChange.bind(this);
@@ -35,12 +42,6 @@ class WordPanel extends Component {
     this.renderGreekTooltip = this.renderGreekTooltip.bind(this);
     this.renderCustomInput = this.renderCustomInput.bind(this);
     this.renderCustomTooltip = this.renderCustomTooltip.bind(this);
-  }
-
-  componentWillReceiveProps(props) {
-    const { word: { text } } = props;
-
-    this.setState({ customText: text });
   }
 
   handleCustomChange(event) {
@@ -221,5 +222,10 @@ class WordPanel extends Component {
     );
   }
 }
+
+WordPanel.propTypes = {
+  word: PropTypes.instanceOf(Word).isRequired,
+  customInputFocusRef: RefType.isRequired,
+};
 
 export default WordPanel;

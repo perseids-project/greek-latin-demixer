@@ -13,15 +13,9 @@ const convertChar = (char, key) => {
   return char;
 };
 
-const convertWord = word => word.split('').map((a, i) => convertChar(a, i));
+const convertWord = (word) => word.split('').map((a, i) => convertChar(a, i));
 
 class ContentWord extends Component {
-  static propTypes = {
-    children: PropTypes.node.isRequired,
-    selectActiveWord: PropTypes.func.isRequired,
-    focusCustomInput: PropTypes.func.isRequired,
-  }
-
   constructor(props) {
     super(props);
 
@@ -103,5 +97,12 @@ class ContentWord extends Component {
     );
   }
 }
+
+ContentWord.propTypes = {
+  children: PropTypes.node.isRequired,
+  selectActiveWord: PropTypes.func.isRequired,
+  focusCustomInput: PropTypes.func.isRequired,
+};
+
 
 export default ContentWord;
