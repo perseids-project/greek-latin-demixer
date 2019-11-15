@@ -1,17 +1,24 @@
 {
   "files": {
     "main.css": "/greek-latin-demixer/static/css/main.44ddaeab.chunk.css",
-    "main.js": "/greek-latin-demixer/static/js/main.373f4eb5.chunk.js",
-    "main.js.map": "/greek-latin-demixer/static/js/main.373f4eb5.chunk.js.map",
-    "runtime~main.js": "/greek-latin-demixer/static/js/runtime~main.8791682d.js",
-    "runtime~main.js.map": "/greek-latin-demixer/static/js/runtime~main.8791682d.js.map",
-    "static/css/2.61f585c8.chunk.css": "/greek-latin-demixer/static/css/2.61f585c8.chunk.css",
-    "static/js/2.c1c8e43c.chunk.js": "/greek-latin-demixer/static/js/2.c1c8e43c.chunk.js",
-    "static/js/2.c1c8e43c.chunk.js.map": "/greek-latin-demixer/static/js/2.c1c8e43c.chunk.js.map",
+    "main.js": "/greek-latin-demixer/static/js/main.25cd8ec7.chunk.js",
+    "main.js.map": "/greek-latin-demixer/static/js/main.25cd8ec7.chunk.js.map",
+    "runtime-main.js": "/greek-latin-demixer/static/js/runtime-main.6e38ffe9.js",
+    "runtime-main.js.map": "/greek-latin-demixer/static/js/runtime-main.6e38ffe9.js.map",
+    "static/css/2.9fccb9bc.chunk.css": "/greek-latin-demixer/static/css/2.9fccb9bc.chunk.css",
+    "static/js/2.1c794a3c.chunk.js": "/greek-latin-demixer/static/js/2.1c794a3c.chunk.js",
+    "static/js/2.1c794a3c.chunk.js.map": "/greek-latin-demixer/static/js/2.1c794a3c.chunk.js.map",
     "index.html": "/greek-latin-demixer/index.html",
-    "precache-manifest.c7da44304d97d8036ae886a2156d3ecc.js": "/greek-latin-demixer/precache-manifest.c7da44304d97d8036ae886a2156d3ecc.js",
+    "precache-manifest.220767e4467e1f516703103c69cdd104.js": "/greek-latin-demixer/precache-manifest.220767e4467e1f516703103c69cdd104.js",
     "service-worker.js": "/greek-latin-demixer/service-worker.js",
-    "static/css/2.61f585c8.chunk.css.map": "/greek-latin-demixer/static/css/2.61f585c8.chunk.css.map",
+    "static/css/2.9fccb9bc.chunk.css.map": "/greek-latin-demixer/static/css/2.9fccb9bc.chunk.css.map",
     "static/css/main.44ddaeab.chunk.css.map": "/greek-latin-demixer/static/css/main.44ddaeab.chunk.css.map"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6e38ffe9.js",
+    "static/css/2.9fccb9bc.chunk.css",
+    "static/js/2.1c794a3c.chunk.js",
+    "static/css/main.44ddaeab.chunk.css",
+    "static/js/main.25cd8ec7.chunk.js"
+  ]
 }
