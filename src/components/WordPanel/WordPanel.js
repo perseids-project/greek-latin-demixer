@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import { instanceOf } from 'prop-types';
 
 import Clipboard from 'react-clipboard.js';
 import { Tooltip } from 'react-tippy';
@@ -224,7 +224,7 @@ class WordPanel extends Component {
 }
 
 WordPanel.propTypes = {
-  word: PropTypes.instanceOf(Word).isRequired,
+  word: instanceOf(Word).isRequired,
   customInputFocusRef: RefType.isRequired,
 };
 

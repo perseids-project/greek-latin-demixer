@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import { node, func } from 'prop-types';
 
 import Convert from '../../lib/convert';
 import Word from '../../lib/Word';
@@ -99,9 +99,9 @@ class ContentWord extends Component {
 }
 
 ContentWord.propTypes = {
-  children: PropTypes.node.isRequired,
-  selectActiveWord: PropTypes.func.isRequired,
-  focusCustomInput: PropTypes.func.isRequired,
+  children: node.isRequired,
+  selectActiveWord: func.isRequired,
+  focusCustomInput: func.isRequired,
 };
 
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import { func } from 'prop-types';
 
 import styles from './InputXml.module.css';
 
@@ -59,7 +59,7 @@ class InputXml extends Component {
 }
 
 InputXml.propTypes = {
-  onSubmit: PropTypes.func.isRequired,
+  onSubmit: func.isRequired,
 };
 
 export default InputXml;

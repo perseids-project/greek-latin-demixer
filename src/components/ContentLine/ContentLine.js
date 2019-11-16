@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import { node, func } from 'prop-types';
 
 import ContentWord from '../ContentWord';
 import Delimit from '../../lib/delimit';
@@ -45,9 +45,9 @@ class ContentLine extends Component {
 }
 
 ContentLine.propTypes = {
-  children: PropTypes.node.isRequired,
-  selectActiveWord: PropTypes.func.isRequired,
-  focusCustomInput: PropTypes.func.isRequired,
+  children: node.isRequired,
+  selectActiveWord: func.isRequired,
+  focusCustomInput: func.isRequired,
 };
 
 export default ContentLine;

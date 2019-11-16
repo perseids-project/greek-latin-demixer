@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import { string } from 'prop-types';
 
 import ContentLine from '../ContentLine';
 import WordPanel from '../WordPanel';
@@ -79,7 +79,7 @@ class EditXml extends Component {
 }
 
 EditXml.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: string.isRequired,
 };
 
 
