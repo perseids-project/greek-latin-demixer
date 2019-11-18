@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1db36e9f844e4c67a69c7b2c939c42fd",
+    "revision": "6d5617802669506bcfe6354c93c3dcae",
     "url": "/greek-latin-demixer/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/greek-latin-demixer/static/css/2.9fccb9bc.chunk.css"
   },
   {
-    "revision": "4cc24d4470806d2fd6df",
+    "revision": "f4e301124c00825c19f7",
     "url": "/greek-latin-demixer/static/css/main.44ddaeab.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/greek-latin-demixer/static/js/2.1c794a3c.chunk.js"
   },
   {
-    "revision": "4cc24d4470806d2fd6df",
-    "url": "/greek-latin-demixer/static/js/main.25cd8ec7.chunk.js"
+    "revision": "f4e301124c00825c19f7",
+    "url": "/greek-latin-demixer/static/js/main.d41badfb.chunk.js"
   },
   {
     "revision": "8ccb22e6fa7420bef568",
