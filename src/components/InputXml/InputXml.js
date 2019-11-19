@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { func } from 'prop-types';
 
+import I18n from '../I18n';
 import styles from './InputXml.module.css';
 
 class InputXml extends Component {
@@ -33,14 +34,20 @@ class InputXml extends Component {
 
     return (
       <form onSubmit={this.handleSubmit} className={styles.formInput}>
-        <h1 className="h3 mt-2 mb-1 font-weight-normal">Greek and Latin Demixer</h1>
-        <h5 className="h5 mb-3 font-weight-normal">Enter text that contains Greek and Latin characters below.</h5>
+        <h1 className="h3 mt-2 mb-1 font-weight-normal">
+          <I18n t="input.title" />
+        </h1>
+        <h5 className="h5 mb-3 font-weight-normal">
+          <I18n t="input.instructions" />
+        </h5>
         {/* We are stuck with an old version of jsx-a11y because of react scripts */}
         {/* but this should be compliant with with newer version. */}
         {/* Of course, disabling the eslint rules breaks the max line rules... */}
         {/* eslint-disable-next-line max-len */}
         {/* eslint-disable-next-line jsx-a11y/label-has-for, jsx-a11y/label-has-associated-control */}
-        <label htmlFor="xmlInput" className="sr-only">Text</label>
+        <label htmlFor="xmlInput" className="sr-only">
+          <I18n t="input.text" />
+        </label>
         <textarea
           id="xmlInput"
           rows="10"
@@ -52,7 +59,9 @@ class InputXml extends Component {
           onChange={this.handleChange}
         />
 
-        <button className="mt-3 btn btn-lg btn-primary btn-block" type="submit">Go!</button>
+        <button className="mt-3 btn btn-lg btn-primary btn-block" type="submit">
+          <I18n t="input.go" />
+        </button>
       </form>
     );
   }

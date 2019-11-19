@@ -6,6 +6,7 @@ import { Tooltip } from 'react-tippy';
 
 import Word from '../../lib/Word';
 import { RefType } from '../../lib/types';
+import I18n from '../I18n';
 
 import styles from './WordPanel.module.css';
 
@@ -161,21 +162,21 @@ class WordPanel extends Component {
         <div className="form-group">
           {this.renderLatinTooltip()}
           <button type="button" className="btn btn-block btn-primary" onClick={this.handleLatinClick}>
-            Latin
+            <I18n t="output.latin" />
           </button>
         </div>
 
         <div className="form-group">
           {this.renderGreekTooltip()}
           <button type="button" className="btn btn-block btn-danger" onClick={this.handleGreekClick}>
-            Greek
+            <I18n t="output.greek" />
           </button>
         </div>
 
         <div className="form-group">
           {this.renderCustomTooltip()}
           <button type="button" className="btn btn-block btn-secondary" onClick={this.handleCustomClick}>
-            Custom
+            <I18n t="output.custom" />
           </button>
         </div>
 
@@ -187,33 +188,35 @@ class WordPanel extends Component {
             onSuccess={handleClipboardSuccess}
           >
 
-            Copy to Clipboard
+            <I18n t="output.copy" />
           </Clipboard>
         </div>
 
         <div className="form-group">
           <div className={styles.instructionsBox}>
-            <h6>Keyboard shortcuts</h6>
+            <h6>
+              <I18n t="shortcuts.title" />
+            </h6>
             <ul className={styles.instructionsList}>
               <li>
                 <strong>Tab</strong>
-                : move through the document
+                <I18n t="shortcuts.move" />
               </li>
               <li>
                 <strong>l</strong>
-                : click Latin button
+                <I18n t="shortcuts.latinButton" />
               </li>
               <li>
                 <strong>g</strong>
-                : click Greek button
+                <I18n t="shortcuts.greekButton" />
               </li>
               <li>
                 <strong>c</strong>
-                : go to to Custom input
+                <I18n t="shortcuts.customInput" />
               </li>
               <li>
                 <strong>Enter</strong>
-                (in custom input): click Custom button
+                <I18n t="shortcuts.customButton" />
               </li>
             </ul>
           </div>

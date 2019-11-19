@@ -4,6 +4,7 @@ import { string } from 'prop-types';
 import ContentLine from '../ContentLine';
 import WordPanel from '../WordPanel';
 import Word from '../../lib/Word';
+import I18n from '../I18n';
 
 import styles from './EditXml.module.css';
 
@@ -57,11 +58,17 @@ class EditXml extends Component {
 
     return (
       <div className={styles.textView}>
-        <h1 className="h3 mt-2 mb-1 font-weight-normal">View Text</h1>
+        <h1 className="h3 mt-2 mb-1 font-weight-normal">
+          <I18n t="output.viewText" />
+        </h1>
         <h5 className="h5 mb-3 font-weight-normal">
-          <span className="text-primary">Latin text is blue. </span>
-          <span className="text-danger">Greek text is red. </span>
-          Click on a word to edit it.
+          <span className="text-primary">
+            <I18n t="output.latinText" />
+          </span>
+          <span className="text-danger">
+            <I18n t="output.greekText" />
+          </span>
+          <I18n t="output.click" />
         </h5>
         <div className={`row ${styles.viewHeight}`}>
           <div className="col-sm-3 pt-2 border">
