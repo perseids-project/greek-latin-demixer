@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d5617802669506bcfe6354c93c3dcae",
+    "revision": "2c53c75226fcaf8a74f2933bf02b12f1",
     "url": "/greek-latin-demixer/index.html"
   },
   {
-    "revision": "90218859e7db13425c35",
+    "revision": "8652a39f9d8f450600e0",
     "url": "/greek-latin-demixer/static/css/2.9fccb9bc.chunk.css"
   },
   {
-    "revision": "f4e301124c00825c19f7",
+    "revision": "6365d0a84e282cf3879c",
     "url": "/greek-latin-demixer/static/css/main.44ddaeab.chunk.css"
   },
   {
-    "revision": "90218859e7db13425c35",
-    "url": "/greek-latin-demixer/static/js/2.1c794a3c.chunk.js"
+    "revision": "8652a39f9d8f450600e0",
+    "url": "/greek-latin-demixer/static/js/2.2758afb4.chunk.js"
   },
   {
-    "revision": "f4e301124c00825c19f7",
-    "url": "/greek-latin-demixer/static/js/main.d41badfb.chunk.js"
+    "revision": "6365d0a84e282cf3879c",
+    "url": "/greek-latin-demixer/static/js/main.b9f5330c.chunk.js"
   },
   {
     "revision": "8ccb22e6fa7420bef568",
