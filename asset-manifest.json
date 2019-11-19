@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/demixer/static/css/main.44ddaeab.chunk.css",
-    "main.js": "/demixer/static/js/main.538caa5a.chunk.js",
-    "main.js.map": "/demixer/static/js/main.538caa5a.chunk.js.map",
+    "main.js": "/demixer/static/js/main.23a61848.chunk.js",
+    "main.js.map": "/demixer/static/js/main.23a61848.chunk.js.map",
     "runtime-main.js": "/demixer/static/js/runtime-main.dc197377.js",
     "runtime-main.js.map": "/demixer/static/js/runtime-main.dc197377.js.map",
     "static/css/2.9fccb9bc.chunk.css": "/demixer/static/css/2.9fccb9bc.chunk.css",
-    "static/js/2.1c794a3c.chunk.js": "/demixer/static/js/2.1c794a3c.chunk.js",
-    "static/js/2.1c794a3c.chunk.js.map": "/demixer/static/js/2.1c794a3c.chunk.js.map",
+    "static/js/2.2758afb4.chunk.js": "/demixer/static/js/2.2758afb4.chunk.js",
+    "static/js/2.2758afb4.chunk.js.map": "/demixer/static/js/2.2758afb4.chunk.js.map",
     "index.html": "/demixer/index.html",
-    "precache-manifest.653c72049cc2fb230a809a7e48d3e7da.js": "/demixer/precache-manifest.653c72049cc2fb230a809a7e48d3e7da.js",
+    "precache-manifest.09ff64d1c9fe24c946aec1648935aa25.js": "/demixer/precache-manifest.09ff64d1c9fe24c946aec1648935aa25.js",
     "service-worker.js": "/demixer/service-worker.js",
     "static/css/2.9fccb9bc.chunk.css.map": "/demixer/static/css/2.9fccb9bc.chunk.css.map",
     "static/css/main.44ddaeab.chunk.css.map": "/demixer/static/css/main.44ddaeab.chunk.css.map"
@@ -17,8 +17,8 @@
   "entrypoints": [
     "static/js/runtime-main.dc197377.js",
     "static/css/2.9fccb9bc.chunk.css",
-    "static/js/2.1c794a3c.chunk.js",
+    "static/js/2.2758afb4.chunk.js",
     "static/css/main.44ddaeab.chunk.css",
-    "static/js/main.538caa5a.chunk.js"
+    "static/js/main.23a61848.chunk.js"
   ]
 }
