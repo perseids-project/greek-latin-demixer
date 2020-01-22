@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/greek-latin-demixer/precache-manifest.a7169c861c974eb3a18fa8b8d83ac7e8.js"
+  "/greek-latin-demixer/precache-manifest.08dce6c154e1f74cf447db0d023f47db.js"
 );
 
 self.addEventListener('message', (event) => {
