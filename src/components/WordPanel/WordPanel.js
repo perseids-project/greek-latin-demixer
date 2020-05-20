@@ -192,7 +192,7 @@ class WordPanel extends Component {
           </Clipboard>
         </div>
 
-        <div className="form-group">
+        <div className="form-group d-none d-sm-block">
           <div className={styles.instructionsBox}>
             <h6>
               <I18n t="shortcuts.title" />

@@ -1,5 +1,18 @@
 .instructionsBox {
   text-align: left;
+  font-size: 0.625rem;
+}
+
+@media (min-width: 768px) {  
+  .instructionsBox {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 992px) {  
+  .instructionsBox {
+    font-size: 1rem;
+  }
 }
 
 .instructionsList {

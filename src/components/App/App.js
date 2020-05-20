@@ -39,7 +39,7 @@ class App extends Component {
           </ul>
         </PerseidsHeader>
         <div className="text-center">
-          <div className="container">
+          <div className="container-md">
             {text ? (
               <EditXml text={text} />
             ) : (

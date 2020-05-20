@@ -71,10 +71,10 @@ class EditXml extends Component {
           <I18n t="output.click" />
         </h5>
         <div className={`row ${styles.viewHeight}`}>
-          <div className="col-sm-3 pt-2 border">
+          <div className="col-3 pt-2 border">
             <WordPanel word={activeWord} customInputFocusRef={this.customInputFocusRef} />
           </div>
-          <div className="col-sm-9">
+          <div className="col-9">
             <pre className={`${styles.textPre} clipboard-target bg-light p-1`}>
               {this.convertText(text)}
             </pre>
