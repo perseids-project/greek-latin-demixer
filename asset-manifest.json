@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/demixer/static/css/main.44ddaeab.chunk.css",
-    "main.js": "/demixer/static/js/main.cdffbdc7.chunk.js",
-    "main.js.map": "/demixer/static/js/main.cdffbdc7.chunk.js.map",
-    "runtime-main.js": "/demixer/static/js/runtime-main.98965b0b.js",
-    "runtime-main.js.map": "/demixer/static/js/runtime-main.98965b0b.js.map",
-    "static/css/2.e4a90d2d.chunk.css": "/demixer/static/css/2.e4a90d2d.chunk.css",
-    "static/js/2.4532dea3.chunk.js": "/demixer/static/js/2.4532dea3.chunk.js",
-    "static/js/2.4532dea3.chunk.js.map": "/demixer/static/js/2.4532dea3.chunk.js.map",
+    "main.css": "/demixer/static/css/main.4e48029a.chunk.css",
+    "main.js": "/demixer/static/js/main.76fe6711.chunk.js",
+    "main.js.map": "/demixer/static/js/main.76fe6711.chunk.js.map",
+    "runtime-main.js": "/demixer/static/js/runtime-main.862dba15.js",
+    "runtime-main.js.map": "/demixer/static/js/runtime-main.862dba15.js.map",
+    "static/css/2.d8589dd4.chunk.css": "/demixer/static/css/2.d8589dd4.chunk.css",
+    "static/js/2.3363b504.chunk.js": "/demixer/static/js/2.3363b504.chunk.js",
+    "static/js/2.3363b504.chunk.js.map": "/demixer/static/js/2.3363b504.chunk.js.map",
     "index.html": "/demixer/index.html",
-    "precache-manifest.0f06a22edb7def3690d17aaf53bdfa61.js": "/demixer/precache-manifest.0f06a22edb7def3690d17aaf53bdfa61.js",
+    "precache-manifest.cb86f62b38e14f0d53bb4dd48b28a7b1.js": "/demixer/precache-manifest.cb86f62b38e14f0d53bb4dd48b28a7b1.js",
     "service-worker.js": "/demixer/service-worker.js",
-    "static/css/2.e4a90d2d.chunk.css.map": "/demixer/static/css/2.e4a90d2d.chunk.css.map",
-    "static/css/main.44ddaeab.chunk.css.map": "/demixer/static/css/main.44ddaeab.chunk.css.map",
-    "static/js/2.4532dea3.chunk.js.LICENSE": "/demixer/static/js/2.4532dea3.chunk.js.LICENSE"
+    "static/css/2.d8589dd4.chunk.css.map": "/demixer/static/css/2.d8589dd4.chunk.css.map",
+    "static/css/main.4e48029a.chunk.css.map": "/demixer/static/css/main.4e48029a.chunk.css.map",
+    "static/js/2.3363b504.chunk.js.LICENSE.txt": "/demixer/static/js/2.3363b504.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.98965b0b.js",
-    "static/css/2.e4a90d2d.chunk.css",
-    "static/js/2.4532dea3.chunk.js",
-    "static/css/main.44ddaeab.chunk.css",
-    "static/js/main.cdffbdc7.chunk.js"
+    "static/js/runtime-main.862dba15.js",
+    "static/css/2.d8589dd4.chunk.css",
+    "static/js/2.3363b504.chunk.js",
+    "static/css/main.4e48029a.chunk.css",
+    "static/js/main.76fe6711.chunk.js"
   ]
 }
