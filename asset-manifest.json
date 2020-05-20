@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/greek-latin-demixer/static/css/main.44ddaeab.chunk.css",
-    "main.js": "/greek-latin-demixer/static/js/main.c8dec570.chunk.js",
-    "main.js.map": "/greek-latin-demixer/static/js/main.c8dec570.chunk.js.map",
-    "runtime-main.js": "/greek-latin-demixer/static/js/runtime-main.7d1660ff.js",
-    "runtime-main.js.map": "/greek-latin-demixer/static/js/runtime-main.7d1660ff.js.map",
-    "static/css/2.e4a90d2d.chunk.css": "/greek-latin-demixer/static/css/2.e4a90d2d.chunk.css",
-    "static/js/2.4532dea3.chunk.js": "/greek-latin-demixer/static/js/2.4532dea3.chunk.js",
-    "static/js/2.4532dea3.chunk.js.map": "/greek-latin-demixer/static/js/2.4532dea3.chunk.js.map",
+    "main.css": "/greek-latin-demixer/static/css/main.4e48029a.chunk.css",
+    "main.js": "/greek-latin-demixer/static/js/main.839a081d.chunk.js",
+    "main.js.map": "/greek-latin-demixer/static/js/main.839a081d.chunk.js.map",
+    "runtime-main.js": "/greek-latin-demixer/static/js/runtime-main.18e3fbe0.js",
+    "runtime-main.js.map": "/greek-latin-demixer/static/js/runtime-main.18e3fbe0.js.map",
+    "static/css/2.d8589dd4.chunk.css": "/greek-latin-demixer/static/css/2.d8589dd4.chunk.css",
+    "static/js/2.3363b504.chunk.js": "/greek-latin-demixer/static/js/2.3363b504.chunk.js",
+    "static/js/2.3363b504.chunk.js.map": "/greek-latin-demixer/static/js/2.3363b504.chunk.js.map",
     "index.html": "/greek-latin-demixer/index.html",
-    "precache-manifest.08dce6c154e1f74cf447db0d023f47db.js": "/greek-latin-demixer/precache-manifest.08dce6c154e1f74cf447db0d023f47db.js",
+    "precache-manifest.1956cd656fbc07dec1920f240860abc2.js": "/greek-latin-demixer/precache-manifest.1956cd656fbc07dec1920f240860abc2.js",
     "service-worker.js": "/greek-latin-demixer/service-worker.js",
-    "static/css/2.e4a90d2d.chunk.css.map": "/greek-latin-demixer/static/css/2.e4a90d2d.chunk.css.map",
-    "static/css/main.44ddaeab.chunk.css.map": "/greek-latin-demixer/static/css/main.44ddaeab.chunk.css.map",
-    "static/js/2.4532dea3.chunk.js.LICENSE": "/greek-latin-demixer/static/js/2.4532dea3.chunk.js.LICENSE"
+    "static/css/2.d8589dd4.chunk.css.map": "/greek-latin-demixer/static/css/2.d8589dd4.chunk.css.map",
+    "static/css/main.4e48029a.chunk.css.map": "/greek-latin-demixer/static/css/main.4e48029a.chunk.css.map",
+    "static/js/2.3363b504.chunk.js.LICENSE.txt": "/greek-latin-demixer/static/js/2.3363b504.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7d1660ff.js",
-    "static/css/2.e4a90d2d.chunk.css",
-    "static/js/2.4532dea3.chunk.js",
-    "static/css/main.44ddaeab.chunk.css",
-    "static/js/main.c8dec570.chunk.js"
+    "static/js/runtime-main.18e3fbe0.js",
+    "static/css/2.d8589dd4.chunk.css",
+    "static/js/2.3363b504.chunk.js",
+    "static/css/main.4e48029a.chunk.css",
+    "static/js/main.839a081d.chunk.js"
   ]
 }
