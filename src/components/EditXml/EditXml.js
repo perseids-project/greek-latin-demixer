@@ -89,5 +89,4 @@ EditXml.propTypes = {
   text: string.isRequired,
 };
 
-
 export default EditXml;

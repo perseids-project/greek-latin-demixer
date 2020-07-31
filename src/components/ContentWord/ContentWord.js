@@ -104,5 +104,4 @@ ContentWord.propTypes = {
   focusCustomInput: func.isRequired,
 };
 
-
 export default ContentWord;
