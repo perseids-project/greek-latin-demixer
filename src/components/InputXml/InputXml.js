@@ -37,9 +37,9 @@ class InputXml extends Component {
         <h1 className="h3 mt-2 mb-1 font-weight-normal">
           <I18n t="input.title" />
         </h1>
-        <h5 className="h5 mb-3 font-weight-normal">
+        <h2 className="h5 mb-3 font-weight-normal">
           <I18n t="input.instructions" />
-        </h5>
+        </h2>
         {/* We are stuck with an old version of jsx-a11y because of react scripts */}
         {/* but this should be compliant with with newer version. */}
         {/* Of course, disabling the eslint rules breaks the max line rules... */}

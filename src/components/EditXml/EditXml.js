@@ -61,7 +61,7 @@ class EditXml extends Component {
         <h1 className="h3 mt-2 mb-1 font-weight-normal">
           <I18n t="output.viewText" />
         </h1>
-        <h5 className="h5 mb-3 font-weight-normal">
+        <h2 className="h5 mb-3 font-weight-normal">
           <span className="text-primary">
             <I18n t="output.latinText" />
           </span>
@@ -69,7 +69,7 @@ class EditXml extends Component {
             <I18n t="output.greekText" />
           </span>
           <I18n t="output.click" />
-        </h5>
+        </h2>
         <div className={`row ${styles.viewHeight}`}>
           <div className="col-3 pt-2 border">
             <WordPanel word={activeWord} customInputFocusRef={this.customInputFocusRef} />
