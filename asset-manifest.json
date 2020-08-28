@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/greek-latin-demixer/static/css/main.4e48029a.chunk.css",
-    "main.js": "/greek-latin-demixer/static/js/main.e1904c9e.chunk.js",
-    "main.js.map": "/greek-latin-demixer/static/js/main.e1904c9e.chunk.js.map",
+    "main.js": "/greek-latin-demixer/static/js/main.89c7ec20.chunk.js",
+    "main.js.map": "/greek-latin-demixer/static/js/main.89c7ec20.chunk.js.map",
     "runtime-main.js": "/greek-latin-demixer/static/js/runtime-main.5eac5c11.js",
     "runtime-main.js.map": "/greek-latin-demixer/static/js/runtime-main.5eac5c11.js.map",
-    "static/css/2.4cc1aef0.chunk.css": "/greek-latin-demixer/static/css/2.4cc1aef0.chunk.css",
-    "static/js/2.6ac47b27.chunk.js": "/greek-latin-demixer/static/js/2.6ac47b27.chunk.js",
-    "static/js/2.6ac47b27.chunk.js.map": "/greek-latin-demixer/static/js/2.6ac47b27.chunk.js.map",
+    "static/css/2.c61ed719.chunk.css": "/greek-latin-demixer/static/css/2.c61ed719.chunk.css",
+    "static/js/2.36a26a6f.chunk.js": "/greek-latin-demixer/static/js/2.36a26a6f.chunk.js",
+    "static/js/2.36a26a6f.chunk.js.map": "/greek-latin-demixer/static/js/2.36a26a6f.chunk.js.map",
     "index.html": "/greek-latin-demixer/index.html",
-    "precache-manifest.783ee21e0de931da8819b7263e754306.js": "/greek-latin-demixer/precache-manifest.783ee21e0de931da8819b7263e754306.js",
+    "precache-manifest.dd8f71f2a3ce47eee61dd8170594c2d7.js": "/greek-latin-demixer/precache-manifest.dd8f71f2a3ce47eee61dd8170594c2d7.js",
     "service-worker.js": "/greek-latin-demixer/service-worker.js",
-    "static/css/2.4cc1aef0.chunk.css.map": "/greek-latin-demixer/static/css/2.4cc1aef0.chunk.css.map",
+    "static/css/2.c61ed719.chunk.css.map": "/greek-latin-demixer/static/css/2.c61ed719.chunk.css.map",
     "static/css/main.4e48029a.chunk.css.map": "/greek-latin-demixer/static/css/main.4e48029a.chunk.css.map",
-    "static/js/2.6ac47b27.chunk.js.LICENSE.txt": "/greek-latin-demixer/static/js/2.6ac47b27.chunk.js.LICENSE.txt"
+    "static/js/2.36a26a6f.chunk.js.LICENSE.txt": "/greek-latin-demixer/static/js/2.36a26a6f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5eac5c11.js",
-    "static/css/2.4cc1aef0.chunk.css",
-    "static/js/2.6ac47b27.chunk.js",
+    "static/css/2.c61ed719.chunk.css",
+    "static/js/2.36a26a6f.chunk.js",
     "static/css/main.4e48029a.chunk.css",
-    "static/js/main.e1904c9e.chunk.js"
+    "static/js/main.89c7ec20.chunk.js"
   ]
 }
